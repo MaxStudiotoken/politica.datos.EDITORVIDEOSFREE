@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - EVF (Edita Videos Free)</title>
+    <title>Política de Privacidad - EVF | Privacy Policy - EVF</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -29,6 +29,37 @@
             color: var(--text-main);
             line-height: 1.7;
             padding: 40px 20px;
+        }
+
+        .lang-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            transition: all 0.3s;
+        }
+
+        .lang-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--text-main);
+        }
+
+        .lang-btn.active {
+            color: var(--text-main);
+            border-color: var(--secondary);
+            background: rgba(0, 180, 216, 0.2);
+            box-shadow: 0 0 10px rgba(0, 180, 216, 0.5);
         }
 
         .container {
@@ -128,55 +159,149 @@
 </head>
 <body>
 
+    <div class="lang-selector">
+        <button class="lang-btn active" onclick="changeLang('es', event)">🇪🇸 Español</button>
+        <button class="lang-btn" onclick="changeLang('en', event)">🇬🇧 English</button>
+    </div>
+
     <div class="container">
         <span class="badge">MaxStudio</span>
-        <h1>Política de Privacidad de EVF</h1>
-        <p class="subtitle"><strong>Edita Videos Free (EVF)</strong> — Última actualización: 13 de septiembre de 2026</p>
+        <h1 data-i18n="title">Política de Privacidad de EVF</h1>
+        <p class="subtitle"><strong data-i18n="appname">Edita Videos Free (EVF)</strong> — <span data-i18n="updated">Última actualización: 13 de septiembre de 2026</span></p>
 
-        <p>En <strong>MaxStudio</strong> nos tomamos muy en serio tu privacidad. Esta Política de Privacidad describe cómo <strong>EVF (Edita Videos Free)</strong> maneja la información cuando descargas y utilizas nuestra aplicación.</p>
+        <p data-i18n="intro">En <strong>MaxStudio</strong> nos tomamos muy en serio tu privacidad. Esta Política de Privacidad describe cómo <strong>EVF (Edita Videos Free)</strong> maneja la información cuando descargas y utilizas nuestra aplicación.</p>
 
-        <h2>1. Información que Recopilamos</h2>
-        <p><strong>EVF no recopila, almacena, ni comparte ningún tipo de dato personal del usuario.</strong></p>
+        <h2 data-i18n="h1">1. Información que Recopilamos</h2>
+        <p data-i18n="p1"><strong>EVF no recopila, almacena, ni comparte ningún tipo de dato personal del usuario.</strong></p>
         <ul>
-            <li><strong>No solicitamos registro:</strong> No necesitas crear una cuenta para usar la App.</li>
-            <li><strong>No accedemos a tus archivos:</strong> Los videos que editas se procesan localmente en tu dispositivo. No tenemos acceso a ellos ni los subimos a ningún servidor.</li>
-            <li><strong>No recopilamos datos de uso:</strong> No utilizamos herramientas de análisis ni rastreadores para monitorizar tu comportamiento dentro de la App.</li>
-            <li><strong>No recopilamos identificadores del dispositivo:</strong> No accedemos a tu ID de publicidad, IMEI, MAC, ni a ningún otro identificador único.</li>
+            <li data-i18n="l1"><strong>No solicitamos registro:</strong> No necesitas crear una cuenta para usar la App.</li>
+            <li data-i18n="l2"><strong>No accedemos a tus archivos:</strong> Los videos que editas se procesan localmente en tu dispositivo. No tenemos acceso a ellos ni los subimos a ningún servidor.</li>
+            <li data-i18n="l3"><strong>No recopilamos datos de uso:</strong> No utilizamos herramientas de análisis ni rastreadores para monitorizar tu comportamiento dentro de la App.</li>
+            <li data-i18n="l4"><strong>No recopilamos identificadores del dispositivo:</strong> No accedemos a tu ID de publicidad, IMEI, MAC, ni a ningún otro identificador único.</li>
         </ul>
 
-        <h2>2. Permisos de la Aplicación</h2>
-        <p>Para funcionar correctamente, la App puede solicitar los siguientes permisos en tu dispositivo:</p>
+        <h2 data-i18n="h2">2. Permisos de la Aplicación</h2>
+        <p data-i18n="p2">Para funcionar correctamente, la App puede solicitar los siguientes permisos en tu dispositivo:</p>
         <ul>
-            <li><strong>Almacenamiento:</strong> Necesario para leer los videos que deseas editar y para guardar los videos editados en tu galería. Estos archivos nunca salen de tu dispositivo.</li>
-            <li><strong>Cámara y Micrófono (opcional):</strong> Si decides grabar videos directamente desde la App, se solicitarán estos permisos. El contenido generado se guarda únicamente en tu dispositivo.</li>
+            <li data-i18n="l5"><strong>Almacenamiento:</strong> Necesario para leer los videos que deseas editar y para guardar los videos editados en tu galería. Estos archivos nunca salen de tu dispositivo.</li>
+            <li data-i18n="l6"><strong>Cámara y Micrófono (opcional):</strong> Si decides grabar videos directamente desde la App, se solicitarán estos permisos. El contenido generado se guarda únicamente en tu dispositivo.</li>
         </ul>
-        <p><strong>Ninguno de los datos a los que accedemos a través de estos permisos es transmitido, recopilado o compartido con terceros.</strong></p>
+        <p data-i18n="p3"><strong>Ninguno de los datos a los que accedemos a través de estos permisos es transmitido, recopilado o compartido con terceros.</strong></p>
 
-        <h2>3. Uso de la Información</h2>
-        <p>Dado que no recopilamos ninguna información, no utilizamos tus datos para ningún propósito.</p>
+        <h2 data-i18n="h3">3. Uso de la Información</h2>
+        <p data-i18n="p4">Dado que no recopilamos ninguna información, no utilizamos tus datos para ningún propósito.</p>
 
-        <h2>4. Compartir con Terceros</h2>
-        <p>No compartimos información con terceros porque no recopilamos ninguna. La App no contiene SDKs de terceros que recopilen datos con fines publicitarios o de análisis.</p>
+        <h2 data-i18n="h4">4. Compartir con Terceros</h2>
+        <p data-i18n="p5">No compartimos información con terceros porque no recopilamos ninguna. La App no contiene SDKs de terceros que recopilen datos con fines publicitarios o de análisis.</p>
 
-        <h2>5. Enlaces a Sitios Web de Terceros</h2>
-        <p>La App puede contener enlaces a sitios web externos (como los botones para compartir en redes sociales). Esta Política de Privacidad no cubre esos sitios. Te recomendamos revisar las políticas de privacidad de cada sitio que visites.</p>
+        <h2 data-i18n="h5">5. Enlaces a Sitios Web de Terceros</h2>
+        <p data-i18n="p6">La App puede contener enlaces a sitios web externos (como los botones para compartir en redes sociales). Esta Política de Privacidad no cubre esos sitios. Te recomendamos revisar las políticas de privacidad de cada sitio que visites.</p>
 
-        <h2>6. Seguridad</h2>
-        <p>Como no recopilamos ni almacenamos datos, no hay riesgo de que tu información personal se vea comprometida a través de nuestra App. Toda la edición de video se realiza de forma local en tu dispositivo.</p>
+        <h2 data-i18n="h6">6. Seguridad</h2>
+        <p data-i18n="p7">Como no recopilamos ni almacenamos datos, no hay riesgo de que tu información personal se vea comprometida a través de nuestra App. Toda la edición de video se realiza de forma local en tu dispositivo.</p>
 
-        <h2>7. Cambios en esta Política de Privacidad</h2>
-        <p>Podemos actualizar esta Política de Privacidad de vez en cuando. Te notificaremos cualquier cambio publicando la nueva política en esta página. Se recomienda revisarla periódicamente.</p>
+        <h2 data-i18n="h7">7. Cambios en esta Política de Privacidad</h2>
+        <p data-i18n="p8">Podemos actualizar esta Política de Privacidad de vez en cuando. Te notificaremos cualquier cambio publicando la nueva política en esta página. Se recomienda revisarla periódicamente.</p>
 
-        <h2>8. Contacto</h2>
-        <p>Si tienes alguna pregunta sobre esta Política de Privacidad, puedes contactarnos a través de:</p>
+        <h2 data-i18n="h8">8. Contacto</h2>
+        <p data-i18n="p9">Si tienes alguna pregunta sobre esta Política de Privacidad, puedes contactarnos a través de:</p>
         <ul>
             <li><strong>GitHub:</strong> <a href="https://github.com/MaxStudiotoken" target="_blank">github.com/MaxStudiotoken</a></li>
         </ul>
 
-        <div class="footer">
+        <div class="footer" data-i18n="footer">
             &copy; 2026 MaxStudio — EVF (Edita Videos Free). Todos los derechos reservados.
         </div>
     </div>
+
+    <script>
+        const translations = {
+            es: {
+                title: "Política de Privacidad de EVF",
+                appname: "Edita Videos Free (EVF)",
+                updated: "Última actualización: 13 de septiembre de 2026",
+                intro: "En <strong>MaxStudio</strong> nos tomamos muy en serio tu privacidad. Esta Política de Privacidad describe cómo <strong>EVF (Edita Videos Free)</strong> maneja la información cuando descargas y utilizas nuestra aplicación.",
+                h1: "1. Información que Recopilamos",
+                p1: "<strong>EVF no recopila, almacena, ni comparte ningún tipo de dato personal del usuario.</strong>",
+                l1: "<strong>No solicitamos registro:</strong> No necesitas crear una cuenta para usar la App.",
+                l2: "<strong>No accedemos a tus archivos:</strong> Los videos que editas se procesan localmente en tu dispositivo. No tenemos acceso a ellos ni los subimos a ningún servidor.",
+                l3: "<strong>No recopilamos datos de uso:</strong> No utilizamos herramientas de análisis ni rastreadores para monitorizar tu comportamiento dentro de la App.",
+                l4: "<strong>No recopilamos identificadores del dispositivo:</strong> No accedemos a tu ID de publicidad, IMEI, MAC, ni a ningún otro identificador único.",
+                h2: "2. Permisos de la Aplicación",
+                p2: "Para funcionar correctamente, la App puede solicitar los siguientes permisos en tu dispositivo:",
+                l5: "<strong>Almacenamiento:</strong> Necesario para leer los videos que deseas editar y para guardar los videos editados en tu galería. Estos archivos nunca salen de tu dispositivo.",
+                l6: "<strong>Cámara y Micrófono (opcional):</strong> Si decides grabar videos directamente desde la App, se solicitarán estos permisos. El contenido generado se guarda únicamente en tu dispositivo.",
+                p3: "<strong>Ninguno de los datos a los que accedemos a través de estos permisos es transmitido, recopilado o compartido con terceros.</strong>",
+                h3: "3. Uso de la Información",
+                p4: "Dado que no recopilamos ninguna información, no utilizamos tus datos para ningún propósito.",
+                h4: "4. Compartir con Terceros",
+                p5: "No compartimos información con terceros porque no recopilamos ninguna. La App no contiene SDKs de terceros que recopilen datos con fines publicitarios o de análisis.",
+                h5: "5. Enlaces a Sitios Web de Terceros",
+                p6: "La App puede contener enlaces a sitios web externos (como los botones para compartir en redes sociales). Esta Política de Privacidad no cubre esos sitios. Te recomendamos revisar las políticas de privacidad de cada sitio que visites.",
+                h6: "6. Seguridad",
+                p7: "Como no recopilamos ni almacenamos datos, no hay riesgo de que tu información personal se vea comprometida a través de nuestra App. Toda la edición de video se realiza de forma local en tu dispositivo.",
+                h7: "7. Cambios en esta Política de Privacidad",
+                p8: "Podemos actualizar esta Política de Privacidad de vez en cuando. Te notificaremos cualquier cambio publicando la nueva política en esta página. Se recomienda revisarla periódicamente.",
+                h8: "8. Contacto",
+                p9: "Si tienes alguna pregunta sobre esta Política de Privacidad, puedes contactarnos a través de:",
+                footer: "&copy; 2026 MaxStudio — EVF (Edita Videos Free). Todos los derechos reservados."
+            },
+            en: {
+                title: "EVF Privacy Policy",
+                appname: "Edita Videos Free (EVF)",
+                updated: "Last updated: September 13, 2026",
+                intro: "At <strong>MaxStudio</strong> we take your privacy very seriously. This Privacy Policy describes how <strong>EVF (Edita Videos Free)</strong> handles information when you download and use our application.",
+                h1: "1. Information We Collect",
+                p1: "<strong>EVF does not collect, store, or share any type of personal user data.</strong>",
+                l1: "<strong>No registration required:</strong> You don't need to create an account to use the App.",
+                l2: "<strong>We don't access your files:</strong> The videos you edit are processed locally on your device. We have no access to them and never upload them to any server.",
+                l3: "<strong>We don't collect usage data:</strong> We don't use analytics tools or trackers to monitor your behavior inside the App.",
+                l4: "<strong>We don't collect device identifiers:</strong> We don't access your advertising ID, IMEI, MAC, or any other unique identifier.",
+                h2: "2. App Permissions",
+                p2: "To work properly, the App may request the following permissions on your device:",
+                l5: "<strong>Storage:</strong> Required to read the videos you want to edit and to save the edited videos to your gallery. These files never leave your device.",
+                l6: "<strong>Camera & Microphone (optional):</strong> If you choose to record videos directly from the App, these permissions will be requested. The generated content is saved only on your device.",
+                p3: "<strong>None of the data we access through these permissions is transmitted, collected, or shared with third parties.</strong>",
+                h3: "3. Use of Information",
+                p4: "Since we don't collect any information, we don't use your data for any purpose.",
+                h4: "4. Sharing with Third Parties",
+                p5: "We don't share information with third parties because we don't collect any. The App does not contain third-party SDKs that collect data for advertising or analytics purposes.",
+                h5: "5. Links to Third-Party Websites",
+                p6: "The App may contain links to external websites (such as social media share buttons). This Privacy Policy does not cover those sites. We recommend reviewing the privacy policy of each site you visit.",
+                h6: "6. Security",
+                p7: "Since we don't collect or store data, there is no risk of your personal information being compromised through our App. All video editing is done locally on your device.",
+                h7: "7. Changes to This Privacy Policy",
+                p8: "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page. We recommend reviewing it periodically.",
+                h8: "8. Contact",
+                p9: "If you have any questions about this Privacy Policy, you can contact us through:",
+                footer: "&copy; 2026 MaxStudio — EVF (Edita Videos Free). All rights reserved."
+            }
+        };
+
+        function changeLang(lang, event) {
+            document.documentElement.lang = lang;
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            if (event && event.target) {
+                event.target.classList.add('active');
+            }
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+            localStorage.setItem('evfPrivacyLang', lang);
+            document.title = lang === 'en'
+                ? "Privacy Policy - EVF"
+                : "Política de Privacidad - EVF";
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('evfPrivacyLang') || 'es';
+            const btn = document.querySelector(`.lang-btn[onclick*="'${savedLang}'"]`);
+            changeLang(savedLang, { target: btn });
+        });
+    </script>
 
 </body>
 </html>
